@@ -18,6 +18,16 @@ export default {
         dvh: '100dvh',
       }
     },
+    keyframes: {
+      shake: {
+        '0%, 100%': { transform: 'rotate(0deg)' },
+        '10%, 30%, 50%, 70%, 90%': { transform: 'rotate(-10deg)' },
+        '20%, 40%, 60%, 80%': { transform: 'rotate(10deg)' },
+      },
+    },
+    animation: {
+      'bell-shake': 'shake 2s ease-in-out 1',
+    },
   },
   plugins: [],
 }
