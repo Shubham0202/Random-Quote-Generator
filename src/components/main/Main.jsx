@@ -4,7 +4,7 @@ import Hero from './Hero'
 import QuoteCard from './QuoteCard'
 import useRandomQuotes from '../../hooks/useRandomQuotes'
 const Main = () => {
-    const {quotes,isLoading,error} = useRandomQuotes('http://api.quotable.io/quotes/random');
+    const {quotes,isLoading,error} = useRandomQuotes('https://api.quotable.io/quotes/random');
 
     return (
         <div className={`relative text-white w-full h-dvh bg-center bg-no-repeat bg-cover overflow-x-hidden overflow-y-scroll`}>
